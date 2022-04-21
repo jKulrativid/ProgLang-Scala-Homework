@@ -8,10 +8,11 @@ import homework.Question05
 import homework.Question06
 import homework.Question07
 import homework.Question08
+import homework.Question09
 
 object Main {
   def main(args: Array[String]) : Unit = {
-    testMaxAll()
+    testTuringStep()
   }
 
   def testInsertAtPosition() : Unit = {
@@ -72,5 +73,15 @@ object Main {
     println(qs.maxAll(List(List(1,2,3,4,8,9),List(),List(4,5),List(1,2,3,5,6,10,11))))
     println(qs.maxAll(List(List(3,4),List(1,2,3,4,51,61),List(1,2,31,41,61,51))))
     println(qs.maxAll(List(List(1,2,3,40,5,6),List(10,2,30,4),List(1,200),List(0,0,0,0,0,0,0,0,9))))
+  }
+
+  def testTuringStep() : Unit = {
+    val qs = Question09
+    val tape = List('C','H','A','R')
+    def f1 = (c:Char) => c.toLower
+    println(qs.turingStep(f1,tape,2))
+    println(qs.turingStep(f1,tape,3))
+    println(qs.turingStep(f1,tape,0))
+    println(qs.turingStep(f1,tape,5))
   }
 }
