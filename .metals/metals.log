@@ -5807,3 +5807,12 @@ WARNING: Unmatched cancel notification for request id 3024
 2022.04.21 16:15:37 INFO  Closing debug server tcp://0.0.0.0:50075
 2022.04.21 16:34:38 INFO  compiling scala_homework1 (1 scala source)
 2022.04.21 16:34:38 INFO  time: compiled scala_homework1 in 97ms
+2022.04.21 16:37:47 INFO  compiling scala_homework1 (1 scala source)
+2022.04.21 16:37:47 INFO  time: compiled scala_homework1 in 0.13s
+2022.04.21 16:37:47 INFO  compiling scala_homework1 (1 scala source)
+2022.04.21 16:37:47 INFO  time: compiled scala_homework1 in 43ms
+2022.04.21 16:37:52 INFO  compiling scala_homework1 (1 scala source)
+2022.04.21 16:37:52 INFO  time: compiled scala_homework1 in 0.81s
+2022.04.21 16:37:55 INFO  compiling scala_homework1 (1 scala source)
+2022.04.21 16:37:55 WARN  Could not load snapshot text for C:\Users\user\ProjeXt\scala_homework1\src\main\scala\main\Main.scala
+2022.04.21 16:37:55 INFO  time: compiled scala_homework1 in 0.95s
