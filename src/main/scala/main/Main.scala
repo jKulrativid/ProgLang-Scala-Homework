@@ -13,7 +13,7 @@ import homework.Question10
 
 object Main {
   def main(args: Array[String]) : Unit = {
-    testAlternate()
+    testMergeSort()
   }
 
   def testInsertAtPosition() : Unit = {
@@ -51,6 +51,11 @@ object Main {
 
   def testMergeSort() : Unit = {
     val qs = Question05
+    println(qs.mergesort(List()))
+    println(qs.mergesort(List(2)))
+    println(qs.mergesort(List(4,2)))
+    println(qs.mergesort(List(6,3,122)))
+    println(qs.mergesort(List(13,3,9,17,0,-5,4,5)))
   }
 
   def testMyFilter() : Unit = {
