@@ -9,10 +9,11 @@ import homework.Question06
 import homework.Question07
 import homework.Question08
 import homework.Question09
+import homework.Question10
 
 object Main {
   def main(args: Array[String]) : Unit = {
-    testTuringStep()
+    testAlternate()
   }
 
   def testInsertAtPosition() : Unit = {
@@ -83,5 +84,16 @@ object Main {
     println(qs.turingStep(f1,tape,3))
     println(qs.turingStep(f1,tape,0))
     println(qs.turingStep(f1,tape,5))
+  }
+
+  def testAlternate() : Unit = {
+    val qs = Question10
+    val f1 = (u:Int, v:Int) => u+v
+    val f2 = (u:Int, v:Int) => u-v
+    println(qs.alternate(f1,f2,List()))
+    println(qs.alternate(f1,f2,List(55)))
+    println(qs.alternate(f1,f2,List(1,2)))
+    println(qs.alternate(f1,f2,List(1,2,3)))
+    println(qs.alternate(f1,f2,List(1,2,3,4)))
   }
 }
