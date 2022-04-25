@@ -12,7 +12,7 @@ object Question04 {
 			return isPalindrome(i-1, ls.tail, rls.tail)
 		}
 
-		val half = list.length / 2
+		val half = 1+(list.length/2)
 		val revList = reverse(list)
 		return isPalindrome(half, list, revList)
 	}
